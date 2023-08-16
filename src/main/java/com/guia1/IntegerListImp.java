@@ -1,5 +1,6 @@
 package com.guia1;
 
+//Wrapper
 public class IntegerListImp implements IntegerList{
     private Integer[] numbers;
     private int currentIndex = 0;
@@ -24,17 +25,22 @@ public class IntegerListImp implements IntegerList{
     }
 
     @Override
-    public void add(int index, Integer element){
-        this.numbers[index]= element;
+    public void add(int otherIndex, Integer element){
+        if(otherIndex > this.index || otherIndex < 0){
+           // throw new Exception("");
+        }
+        this.numbers[otherIndex]= element;       
     }
     
     public boolean addAll(IntegerList aList){
         Integer[] temp = aList.toArray();
+        boolean result = true;
         for(int i = 0; i < temp.length; i++){
-            this.numbers[this.currentIndex] = temp[i];
-            this.currentIndex++;
+            Integer numberTemp = temp[i];
+            result = result && this.add(numberTemp);
         }
-        return true;
+        return result;
+        
     }
         /* 
         boolean addAll(int index, IntegerList aList);

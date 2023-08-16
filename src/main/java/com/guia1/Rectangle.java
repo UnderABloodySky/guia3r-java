@@ -1,6 +1,6 @@
 package com.guia1;
 
-public class Rectangle {
+public class Rectangle implements Shape{
     private double alt;
     private double base;
     private Point point;
@@ -30,3 +30,5 @@ public class Rectangle {
         return this.base * 2 + this.alt * 2;
     }
 }
+
+

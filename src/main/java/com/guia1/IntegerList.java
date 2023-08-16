@@ -9,10 +9,9 @@ public interface IntegerList {
         /** Appends all of the elements in the specified collection
         * to the end of this list, in the order that they are
         * returned by the specified collection's iterator. */
-        /*
+        
         boolean addAll(IntegerList aList);
-        //Inserts all of the elements in the specified
-        * collection into this list at the specified position. */
+        //Inserts all of the elements in the specified collection into this list at the specified position. */
         /*boolean addAll(int index, IntegerList aList);
         /** Removes all of the elements from this list. */
         /*void clear();
@@ -44,3 +43,4 @@ public interface IntegerList {
         * in this list in proper sequence (from first to last element). */
         Integer[] toArray();
 }
+

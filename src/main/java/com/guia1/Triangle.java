@@ -1,12 +1,13 @@
 package com.guia1;
 
-public class Triangle {
+public class Triangle  implements Shape{
     private double alt;
     private double base;
     private double ladoA;
     private double ladoB;
     private Point[] vertices = new Point[3];
     
+    //Complementación
     public Triangle(double alt, double aBase, double ladoA, double ladoB, Point[] vertices){
         this.alt = alt;
         this.base = aBase; 

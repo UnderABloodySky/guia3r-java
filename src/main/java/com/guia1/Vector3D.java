@@ -1,5 +1,6 @@
 package com.guia1;
 
+//Herencia
 public class Vector3D extends Point {
     private double z;
 
